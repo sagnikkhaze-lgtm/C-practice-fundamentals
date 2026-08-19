@@ -6,13 +6,9 @@ int main()
 	double a,b,t=0.0;
 	bool flag=true,fstrun=true;
 	
-	for(int i=1;i<=5;i++)
+	while(flag)//to continously takae input from user 
 	{
-		
-	}
-	while(flag)
-	{
-		if(fstrun)
+		if(fstrun) // to make the program take 2 inputs from use when it runs for the 1st time , just like a real calculator..
 		{
 			printf("Enter 1st number : ");
 			scanf("%lf",&a);
@@ -20,9 +16,9 @@ int main()
 			printf("Enter 2nd number : ");
 			scanf("%lf",&b);
 			
-			fstrun=false;
+			fstrun=false;//changes the 1st run counter , i,e the program has already taken input for the first time.
 		}
-		else
+		else //from the 2nd time it only takes one input and the other number with which the operation is to be performed is the previous total
 		{
 			printf("enter number : ");
 			scanf("%lf",&a);
@@ -64,13 +60,14 @@ int main()
 				printf("wrong choice sir please try again");
 		}
 		
-		char con;
-		printf("Do u want to continue ? y/n");
+		char con;//ik its inefficient but its just the easy way to ask from user 
+		printf("Do u want to continue ? y/n : ");
 		scanf(" %c", &con);
-		
+
+		//idk why the != condtion doesnt work thats why i had to write this block
 		if(con == 'y' || con == 'Y') //flag changing statement
 		{
-			flag=true;
+			flag=true; 
 		}
 		else
 		{
