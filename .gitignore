@@ -1,55 +1,37 @@
-# Prerequisites
-*.d
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-# Object files
+# IDE & Editor files
+.idea/
+.vscode/
+cmake-build-debug/
+*.iml
+*.iws
+*.ipr
+*.swp
+*.swo
+*~
+
+# Compiled Object files and Binaries
 *.o
-*.ko
 *.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
+*.out
+*.exe
+*.app
+*.dylib
 *.dll
 *.so
-*.so.*
-*.dylib
+a.out
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+# Scratch / Runner temp files
+tempCodeRunnerFile
+tempCodeRunnerFile.c
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
-
-# debug information files
-*.dwo
+# Runtime generated test files
+kasam.txt
